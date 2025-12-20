@@ -1,3 +1,52 @@
+body.darkmode .btn-tecnicos {
+    background: #23273a;
+    color: #ffd600;
+    border: 2px solid #ffd600;
+}
+body.darkmode .btn-tecnicos:hover {
+    background: #ffd600;
+    color: #23273a;
+    border: 2px solid #ffd600;
+}
+body.darkmode .login-container {
+    background: #23273a;
+    color: #e3edfa;
+    box-shadow: 0 4px 32px #000a;
+}
+body.darkmode .login-container h2 {
+    color: #ffd600;
+}
+body.darkmode .login-container input {
+    background: #181c2a;
+    color: #e3edfa;
+    border: 1.5px solid #ffd600;
+}
+body.darkmode .login-container button {
+    background: #ffd600;
+    color: #23273a;
+}
+body.darkmode .login-container button:hover {
+    background: #ffe066;
+}
+/* Botão Técnicos */
+.btn-tecnicos {
+    margin-left: 1.5rem;
+    background: #fff;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 2px 8px #1976d211;
+}
+.btn-tecnicos:hover {
+    background: #1976d2;
+    color: #fff;
+    border: 2px solid #1565c0;
+}
 /* Botão Dark Mode */
 #darkmode-toggle {
     background: none;
