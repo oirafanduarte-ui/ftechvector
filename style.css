@@ -1,3 +1,89 @@
+.download-btn {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 0.5em;
+}
+.download-btn:hover {
+    background: #1565c0;
+}
+body.darkmode .download-btn {
+    background: #ffd600;
+    color: #23273a;
+}
+body.darkmode .download-btn:hover {
+    background: #ffe066;
+}
+.login-title {
+    margin-bottom: 1.5rem;
+    color: #1976d2;
+}
+.login-input {
+    width: 90%;
+    padding: 0.7em;
+    margin-bottom: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #1976d2;
+    font-size: 1rem;
+    background: #fff;
+    color: #23273a;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.login-btn {
+    width: 100%;
+    padding: 0.7em;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login-btn:hover {
+    background: #1565c0;
+}
+body.darkmode .login-title {
+    color: #ffd600;
+}
+body.darkmode .login-input {
+    background: #181c2a;
+    color: #e3edfa;
+    border: 1.5px solid #ffd600;
+}
+body.darkmode .login-btn {
+    background: #ffd600;
+    color: #23273a;
+}
+body.darkmode .login-btn:hover {
+    background: #ffe066;
+}
+.downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    margin: 2.5em auto 0 auto;
+    max-width: 400px;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+.card-tecnico {
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 4px 32px rgba(25,118,210,0.10);
+    padding:2.2rem 1.5rem 1.5rem 1.5rem;
+    margin-top:1.5rem;
+    text-align:center;
+}
 body.darkmode .btn-tecnicos {
     background: #23273a;
     color: #ffd600;
