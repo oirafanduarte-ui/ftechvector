@@ -87,11 +87,13 @@
         <section class="apresentacao" style="max-width: 420px; margin: 40px auto 0 auto;">
             <h1 style="font-size:2rem; text-align:center; margin-bottom:1.2rem;">Área dos Técnicos</h1>
             <form id="login-area" class="login-container" onsubmit="loginTecnico(); return false;">
-                <h2>Login</h2>
-                <div id="login-error" class="login-error" style="display:none;"></div>
-                <input type="text" id="usuario" placeholder="Usuário" autocomplete="username">
-                <input type="password" id="senha" placeholder="Senha" autocomplete="current-password">
-                <button type="submit">Entrar</button>
+                                <h2>Login</h2>
+                                <div id="login-error" class="login-error" style="display:none;"></div>
+                                <form autocomplete="off">
+                                    <input type="text" id="usuario" placeholder="Usuário" autocomplete="off">
+                                    <input type="password" id="senha" placeholder="Senha" autocomplete="off">
+                                    <button type="submit">Entrar</button>
+                                </form>
             </form>
             <div id="tecnico-area" style="display:none; margin-top:1.5rem; text-align:center;">
                 <!-- <h2 style="color:#1976d2; margin-bottom:1.2rem;">Downloads Rápidos</h2> -->
@@ -102,11 +104,6 @@
                     <button class="download-btn" onclick="window.open('https://drive.google.com/drive/u/1/folders/18D7aqJUYOhFB1t23pYnossFpfTbGerNq','_blank')">DLLs</button>
                     <button class="download-btn" onclick="window.open('https://sites.google.com/vectorinf.com.br/suporte/download/sistemas/firebird?authuser=0','_blank')">Firebird x64 & x32</button>
                 </div>
-                <div class="tecnico-btns" style="display:flex; gap:1rem; justify-content:center; margin-top:2rem;">
-                    <button class="btn-tecnicos header-btn" onclick="window.location.href='index.html'">Técnicos</button>
-                    <button class="btn-tecnicos header-btn" onclick="window.open('https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=&AspxAutoDetectCookieSupport=1','_blank')">Consultar NF-e</button>
-                    <button class="btn-tecnicos header-btn" onclick="window.open('https://monitor.tecnospeed.com.br/?&filter-uf=mt&filter-type-chart=line&filter-by-chart=time','_blank')">Serviço NF-e</button>
-                </div>
             </div>
         </section>
     </main>
@@ -114,49 +111,5 @@
         <p>&copy; 2025 FTECH. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
-    <script>
-    // Dark mode igual ao index.html (chave e lógica unificadas)
-    const darkBtn = document.getElementById('darkmode-toggle');
-    const darkIcon = document.getElementById('darkmode-icon');
-    function setDarkMode(on) {
-        document.body.classList.toggle('darkmode', on);
-        darkIcon.textContent = on ? '☀️' : '🌙';
-        localStorage.setItem('ftech-darkmode', on ? '1' : '0');
-    }
-    setDarkMode(localStorage.getItem('ftech-darkmode') === '1');
-    darkBtn.addEventListener('click', () => {
-        setDarkMode(!document.body.classList.contains('darkmode'));
-    });
-
-    // Login técnicos
-    function loginTecnico() {
-        var usuario = document.getElementById('usuario').value.trim();
-        var senha = document.getElementById('senha').value;
-        var erro = document.getElementById('login-error');
-        if(usuario.toLowerCase() === 'admin' && senha === 'vector@123') {
-            erro.style.display = 'block';
-            erro.textContent = 'Usuário e senha não permitidos!';
-            return;
-        }
-        if(usuario.toLowerCase() === 'ftech' && senha === 'vector@123') {
-            sessionStorage.setItem('tecnicoLogado', '1');
-            document.getElementById('login-area').style.display = 'none';
-            document.getElementById('tecnico-area').style.display = 'block';
-            return;
-        }
-        erro.style.display = 'block';
-        erro.textContent = 'Usuário ou senha inválidos!';
-        return;
-    }
-    // Resetar login ao fechar o site
-    window.addEventListener('beforeunload', function() {
-        sessionStorage.removeItem('tecnicoLogado');
-    });
-    // Se já logado na sessão, mostrar área técnica
-    if(sessionStorage.getItem('tecnicoLogado') === '1') {
-        document.getElementById('login-area').style.display = 'none';
-        document.getElementById('tecnico-area').style.display = 'block';
-    }
-    </script>
 </body>
 </html>
