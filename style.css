@@ -1,3 +1,118 @@
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+main, .apresentacao, .login-container, .downloads, .card-tecnico {
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    body, html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .apresentacao, .login-container, .downloads, .card-tecnico {
+        max-width: 100vw;
+        width: 100vw;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    header > div {
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: 0;
+    }
+    .header-btn {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+        margin-bottom: 0.5em;
+        box-sizing: border-box;
+    }
+    .btn-tecnicos, .download-btn, .login-btn {
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .downloads {
+        max-width: 100vw;
+        width: 100vw;
+        gap: 0.7em;
+        box-sizing: border-box;
+    }
+    .downloads button {
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .tecnico-btns {
+        flex-direction: column;
+        gap: 0.7em;
+        align-items: stretch;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .video-item {
+        max-width: 100vw;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .videos {
+        width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 700px) {
+    .header-btn {
+        min-width: 0;
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .btn-tecnicos, .download-btn, .login-btn {
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .downloads {
+        max-width: 100%;
+        width: 100%;
+        gap: 0.7em;
+    }
+    .apresentacao {
+        padding: 1rem 0.2rem 0.7rem 0.2rem;
+        border-radius: 10px;
+        margin-bottom: 1.2rem;
+    }
+    .apresentacao h1 {
+        font-size: 1.3rem;
+    }
+    .login-container {
+        max-width: 100%;
+        margin: 1.2rem auto 0 auto;
+        padding: 1rem 0.2rem 0.7rem 0.2rem;
+        border-radius: 10px;
+    }
+    .downloads button {
+        font-size: 1rem;
+        padding: 0.7em 0.5em;
+    }
+    .tecnico-btns {
+        flex-direction: column;
+        gap: 0.7em;
+        align-items: stretch;
+    }
+}
 .header-btn {
     flex: 1 1 0;
     min-width: 180px;
