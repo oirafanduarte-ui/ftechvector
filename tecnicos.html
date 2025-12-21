@@ -86,14 +86,12 @@
     <main>
         <section class="apresentacao" style="max-width: 420px; margin: 40px auto 0 auto;">
             <h1 style="font-size:2rem; text-align:center; margin-bottom:1.2rem;">Área dos Técnicos</h1>
-            <form id="login-area" class="login-container" onsubmit="loginTecnico(); return false;">
-                                <h2>Login</h2>
-                                <div id="login-error" class="login-error" style="display:none;"></div>
-                                <form autocomplete="off">
-                                    <input type="text" id="usuario" placeholder="Usuário" autocomplete="off">
-                                    <input type="password" id="senha" placeholder="Senha" autocomplete="off">
-                                    <button type="submit">Entrar</button>
-                                </form>
+            <form id="login-area" class="login-container" onsubmit="loginTecnico(); return false;" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <h2>Login</h2>
+                <div id="login-error" class="login-error" style="display:none;"></div>
+                <input type="text" id="user_tecnico" name="user_tecnico" placeholder="Usuário" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <input type="password" id="senha_tecnico" name="senha_tecnico" placeholder="Senha" autocomplete="new-password" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <button type="submit">Entrar</button>
             </form>
             <div id="tecnico-area" style="display:none; margin-top:1.5rem; text-align:center;">
                 <!-- <h2 style="color:#1976d2; margin-bottom:1.2rem;">Downloads Rápidos</h2> -->

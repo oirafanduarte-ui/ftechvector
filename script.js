@@ -1,7 +1,7 @@
 // --- Login técnicos para tecnicos.html ---
 function loginTecnico() {
-    var usuario = document.getElementById('usuario');
-    var senha = document.getElementById('senha');
+    var usuario = document.getElementById('user_tecnico');
+    var senha = document.getElementById('senha_tecnico');
     var erro = document.getElementById('login-error');
     if (!usuario || !senha || !erro) return;
     var usuarioVal = usuario.value.trim();
