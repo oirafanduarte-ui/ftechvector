@@ -1,3 +1,22 @@
+.btn-nfe, .btn-servico {
+    background: #e53935 !important;
+    color: #fff !important;
+    border: 2px solid #e53935 !important;
+}
+.btn-nfe:hover, .btn-servico:hover {
+    background: #b71c1c !important;
+    border: 2px solid #b71c1c !important;
+}
+body.darkmode .btn-nfe, body.darkmode .btn-servico {
+    background: #e53935 !important;
+    color: #e3edfa !important;
+    border: 2px solid #e53935 !important;
+}
+body.darkmode .btn-nfe:hover, body.darkmode .btn-servico:hover {
+    background: #b71c1c !important;
+    color: #e3edfa !important;
+    border: 2px solid #b71c1c !important;
+}
 html, body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -250,23 +269,33 @@ body.darkmode .login-container button:hover {
     margin-bottom: 0.5em;
     outline: none;
 }
+/* Botões personalizados para AnyViewer, AnyDesk e RustDesk */
+/* Botões verdes para AnyViewer, AnyDesk e RustDesk */
+.btn-anyviewer, .btn-anydesk, .btn-rustdesk {
+    background: #008c1a !important;
+    color: #fff !important;
+    border: 2px solid #008c1a !important;
+}
+.btn-anyviewer:hover, .btn-anydesk:hover, .btn-rustdesk:hover {
+    background: #005c0a !important;
+    border: 2px solid #005c0a !important;
+}
+body.darkmode .btn-anyviewer, body.darkmode .btn-anydesk, body.darkmode .btn-rustdesk {
+    background: #008c1a !important;
+    color: #e3edfa !important;
+    border: 2px solid #008c1a !important;
+}
+body.darkmode .btn-anyviewer:hover, body.darkmode .btn-anydesk:hover, body.darkmode .btn-rustdesk:hover {
+    background: #005c0a !important;
+    color: #e3edfa !important;
+    border: 2px solid #005c0a !important;
+}
 .btn-tecnicos:hover, .download-btn:hover, .login-btn:hover {
     background: #1565c0;
     color: #fff;
     border: 2px solid #1565c0;
 }
 
-body.darkmode .btn-tecnicos, body.darkmode .download-btn, body.darkmode .login-btn {
-    background: #ffd600;
-    color: #23273a;
-    border: 2px solid #ffd600;
-    box-shadow: 0 2px 8px #ffd60033;
-}
-body.darkmode .btn-tecnicos:hover, body.darkmode .download-btn:hover, body.darkmode .login-btn:hover {
-    background: #ffe066;
-    color: #23273a;
-    border: 2px solid #ffe066;
-}
 /* Botão Dark Mode */
 #darkmode-toggle {
     background: none;
