@@ -54,6 +54,7 @@ if (darkBtn) {
         setDarkMode(!document.body.classList.contains('darkmode'));
     });
 }
+
 // Interatividade simples para navegação
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('nav a');
